@@ -1,6 +1,8 @@
 # Some STUPID mistakes I made
 
 ## Training Neural Network
+- last layer nonliniearity. if it's ReLU, then the logits are all positive...
+- BN makes a differencel. sometimes, we want evaluation mode to use statistic in the current batch instead of history batch.
 - during test, forget to restore model first... `Feb, 18`
     + symptom: if the result is graph / structure dependent, it is hard to find
     + surprise outcome: some network highly depends on the graph instead of the representation you learn. Even random initialization can get good result.
