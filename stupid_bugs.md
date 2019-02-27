@@ -14,3 +14,7 @@
     + surprise outcome: does not affect performance so much
 - 
 
+- flag boolean: `Feb, 19`
+    + flags.DEFINE_bool --nofoo / --nofoo`=`False
+    + args boolean also does some weird thing
+- Don't naively call numpy.random.rand() in torch multi threading. bc numpy does not handle fork() properly [ref](https://github.com/pytorch/pytorch/issues/5059)
